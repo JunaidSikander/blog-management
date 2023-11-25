@@ -1,0 +1,26 @@
+{
+  "name" : "blog-management",
+  "version" : "1.0.0",
+  "description" : "",
+  "main" : "backend/src/app.ts",
+  "scripts" : {
+    "start" : "node backend/dist/app.js",
+    "dev" : "concurrently \"npx tsc --watch  \" \" nodemon  -q backend/dist/app.js \" ",
+    "build" : "tsc"
+  },
+  "repository" : {
+    "type" : "git",
+    "url" : "git+https://github.com/JunaidSikander/blog-management.git"
+  },
+  "author" : "Junaid Sikander <junaid_sikander@live.com>",
+  "license" : "ISC",
+  "bugs" : {
+    "url" : "https://github.com/JunaidSikander/blog-management/issues"
+  },
+  "homepage" : "https://github.com/JunaidSikander/blog-management#readme",
+  "devDependencies" : {
+    "concurrently" : "^8.2.2",
+    "nodemon" : "^3.0.1",
+    "typescript" : "^5.3.2"
+  }
+}
